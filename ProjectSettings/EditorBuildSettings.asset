@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: "Assets/Scenes/\u30BF\u30A4\u30C8\u30EB\u30B9\u30AF\u30EA\u30FC\u30F3.unity"
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: "Assets/Scenes/\u30EB\u30FC\u30EB\u30B9\u30AF\u30EA\u30FC\u30F3.unity"
+    guid: 5c8c99f7ef5fc3b4da9b4184494ebabd
+  - enabled: 1
+    path: "Assets/Scenes/\u30B2\u30FC\u30E0\u30B9\u30AF\u30EA\u30FC\u30F3.unity"
+    guid: e8b64123a2984d148ae8effe6f4491de
+  - enabled: 1
+    path: "Assets/Scenes/\u30B2\u30FC\u30E0\u30A8\u30F3\u30C9\u30B9\u30AF\u30EA\u30FC\u30F3.unity"
+    guid: 6b8bf3e27d04a974b87c7c8419fac73b
+  - enabled: 1
+    path: "Assets/Scenes/\u30A4\u30F3\u30D5\u30A9\u30B9\u30AF\u30EA\u30FC\u30F3.unity"
+    guid: b4e80dd3af6c48345ba50357e9645e29
+  - enabled: 1
+    path: "Assets/Scenes/\u30E1\u30CB\u30E5\u30FC\u30B9\u30AF\u30EA\u30FC\u30F3.unity"
+    guid: bdfbcafa5af16be4cab8f872e4479790
   m_configObjects: {}
