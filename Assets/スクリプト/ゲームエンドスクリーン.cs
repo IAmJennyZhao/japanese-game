@@ -10,9 +10,15 @@ public class ゲームエンドスクリーン : MonoBehaviour
     public Text scoreText;
     public Text recipe;
 
-    public void Setup(string food, int score){
+    public void Start(){
         gameObject.SetActive(true);
-        scoreText.text = score.ToString() + " POINTS";
-        recipe.text = food;
+        // PlayerData.score = 30; // delete later
+        // PlayerData.foodInfo = new Dictionary<int, Level>();
+        // PlayerData.foodInfo[PlayerData.currentLevel] = new Level(0, "カツ丼", .6f);
+        // PlayerData.foodInfo[PlayerData.currentLevel].levelName = "カツ丼"; // delete later
+        scoreText.text = PlayerData.score.ToString() + " POINTS";
+        // scoreText.text = "25 POINTS";
+        recipe.text = PlayerData.foodInfo[PlayerData.currentLevel].levelName;
+        scoreText.SetAllDirty();
     }
 }

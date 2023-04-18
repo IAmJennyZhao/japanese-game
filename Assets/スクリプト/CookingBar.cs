@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+// using PlayerData;
 
 public class CookingBar : MonoBehaviour
 {
@@ -42,6 +43,7 @@ public class CookingBar : MonoBehaviour
         moving = false;
         int score = scoring();
         Debug.Log(score);
+        PlayerData.score = score;
     }
 
     // returns 0 if cooking stopped outside of target range, 1 in larger range, 2 in smaller range

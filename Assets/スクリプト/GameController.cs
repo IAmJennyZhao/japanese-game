@@ -8,9 +8,9 @@ public class GameController : MonoBehaviour
     string food = "カツ丼";
     int totalPoints = 0;
 
-    public void GameOver() {
-        ゲームエンドスクリーン.Setup(food, totalPoints);
-    }
+    // public void GameOver() {
+    //     ゲームエンドスクリーン.Setup(food, totalPoints);
+    // }
 
     private void Awake() {}
     void Start() {}
