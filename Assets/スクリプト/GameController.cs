@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public ゲームエンドスクリーン ゲームエンドスクリーン;
-    string food = "カツ丼";
-    int totalPoints = 0;
+    // string food = "カツ丼";
+    // int totalPoints = 0;
 
     // public void GameOver() {
     //     ゲームエンドスクリーン.Setup(food, totalPoints);
