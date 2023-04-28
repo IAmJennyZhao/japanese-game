@@ -15,7 +15,8 @@ public class ScreenManager : MonoBehaviour
     }
 
     public void LoadGameScreen() {
-        SceneManager.LoadScene(2);
+        if (PlayerData.unlocked[PlayerData.currentLevel])
+            SceneManager.LoadScene(2);
     }
 
     public void LoadGameOverScreen() {

@@ -14,7 +14,9 @@ public class CookingBar : MonoBehaviour
 
     public float FillSpeed = 0.05f;
     private float sliderValue = 0; // resets slider at 0 everytime page is loaded
-    private bool moving = true;
+    private bool moving = false;
+    private float timeBeforeMoving = 1.0f;
+    private float timePassed = 0.0f;
 
     private static float smallTargetWidth = 16.0f;
     private static float largeTargetWidth = 35.0f;
@@ -22,6 +24,7 @@ public class CookingBar : MonoBehaviour
 
     private void Awake() {
         slider = gameObject.GetComponent<Slider>();
+        slider.value = sliderValue;
     }
     // Start is called before the first frame update
     void Start()
@@ -32,9 +35,17 @@ public class CookingBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moving && sliderValue < 1) {
+        if (!moving && sliderValue == 0) {
+            timePassed += Time.deltaTime;
+            if (timePassed > timeBeforeMoving)
+                moving = true;
+        }
+        else if (moving && sliderValue < 1) {
             sliderValue += FillSpeed * Time.deltaTime;
             slider.value = sliderValue;
+        }
+        else if (moving && sliderValue >= 1) {
+            stopCooking();
         }
     }
 

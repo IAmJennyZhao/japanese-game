@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1466638822}
         m_TargetAssemblyTypeName: ScreenManager, Assembly-CSharp
-        m_MethodName: LoadTitleScreen
+        m_MethodName: LoadMenuScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -571,7 +571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30EB\u30FC\u30EB\n\u307E\u3060\u66F8\u3044\u3066\u306A\u3044"
+  m_Text: "\u30A4\u30F3\u30D5\u30A9\n\u307E\u3060\u66F8\u3044\u3066\u306A\u3044"
 --- !u!222 &1656221699
 CanvasRenderer:
   m_ObjectHideFlags: 0

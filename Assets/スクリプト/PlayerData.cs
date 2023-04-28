@@ -4,7 +4,9 @@ using UnityEngine;
 
 public static class PlayerData
 {
-    public static bool[] unlocked {get; set; }
+    public static bool[] unlocked {get; set; } = {true, false, false, false, false,
+                                                false,  false, false, false, false,
+                                                false,  false, false };
     public static int currentLevel { get; set; }
     public static int score { get; set; }
 
@@ -21,8 +23,8 @@ public static class PlayerData
         {9, new Level(9, "カツ丼",      0.55f)},
         {10, new Level(10, "オムライス",  0.75f)},
         {11, new Level(11, "すき焼き",    0.45f)},
-        {12, new Level(12, "ハンバーガステーク",  0.63f)},
+        {12, new Level(12, "ハンバーガステーキ",  0.63f)},
     };
 
-    // public static int coinTotal {get; set; }
+    public static int coinTotal {get; set; } = 0;
 }

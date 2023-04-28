@@ -16,7 +16,9 @@ public class ゲームエンドスクリーン : MonoBehaviour
         // PlayerData.foodInfo = new Dictionary<int, Level>();
         // PlayerData.foodInfo[PlayerData.currentLevel] = new Level(0, "カツ丼", .6f);
         // PlayerData.foodInfo[PlayerData.currentLevel].levelName = "カツ丼"; // delete later
-        scoreText.text = PlayerData.score.ToString() + " POINTS";
+        scoreText.text = PlayerData.score.ToString() + " POINT";
+        if (PlayerData.score != 0) 
+            scoreText.text += "S";
         // scoreText.text = "25 POINTS";
         recipe.text = PlayerData.foodInfo[PlayerData.currentLevel].levelName;
         scoreText.SetAllDirty();
