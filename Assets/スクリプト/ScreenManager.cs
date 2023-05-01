@@ -6,6 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class ScreenManager : MonoBehaviour
 {
+    public Text moneyText;
+
+    private void Start() {
+        updateMoneyText();
+    }
+
+    public void updateMoneyText() {
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "メニュースクリーン") {
+            Debug.Log("Updating money count");
+            moneyText.text = PlayerData.coinTotal+"";
+            Debug.Log(PlayerData.coinTotal+" coins");
+        }
+    }
+
     public void LoadTitleScreen() {
         SceneManager.LoadScene(0);
     }
@@ -15,8 +30,13 @@ public class ScreenManager : MonoBehaviour
     }
 
     public void LoadGameScreen() {
-        if (PlayerData.unlocked[PlayerData.currentLevel])
+        updateMoneyText();
+        if (PlayerData.unlocked[PlayerData.currentLevel] && !PlayerData.justUnlocked){
             SceneManager.LoadScene(2);
+            Debug.Log("Loading game");
+        }
+        else 
+            Debug.Log("Cannot load game");
     }
 
     public void LoadGameOverScreen() {

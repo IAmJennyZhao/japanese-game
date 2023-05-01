@@ -31,15 +31,16 @@ public class レベルメニュー : MonoBehaviour
 
     private void updateDisplay() {
         levelUnlocked = PlayerData.unlocked[level];
-        levelUnlocked = true; // remove later 
+        // levelUnlocked = true; // remove later 
 
         if (levelUnlocked) {
             levelText.text = PlayerData.foodInfo[level].levelName;
             image.sprite = unlockedSprite;
         } else {
-            levelText.text = PlayerData.foodInfo[level].levelName;
+            levelText.text = "-"+PlayerData.foodInfo[level].unlockCost + " 買う";
             image.sprite = lockedSprite;
         }
+        // updateMoneyText();
     }
 
     // // Update is called once per frame
@@ -49,13 +50,26 @@ public class レベルメニュー : MonoBehaviour
     // }
 
     public void buttonClicked() {
+        PlayerData.justUnlocked = false;
         PlayerData.currentLevel = level;
         PlayerData.score = 0;
         if (levelUnlocked) {
             Debug.Log("Level: "+level);
         } else {
-            Debug.Log("Disabled Level "+level+" Clicked");
-            StartCoroutine(disabledAnimation());
+            int coins = PlayerData.coinTotal;
+            int cost = PlayerData.foodInfo[level].unlockCost;
+            if (cost > coins) {
+                Debug.Log("Disabled Level "+level+" Clicked");
+                StartCoroutine(disabledAnimation());
+            }
+            else {
+                Debug.Log("Unlocking Level "+level);
+                PlayerData.coinTotal = coins - cost;
+                // levelUnlocked = true;
+                PlayerData.unlocked[level] = true;
+                updateDisplay();
+                PlayerData.justUnlocked = true;
+            }
         }
     }
 
