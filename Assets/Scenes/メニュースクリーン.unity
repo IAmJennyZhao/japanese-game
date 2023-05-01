@@ -254,22 +254,30 @@ PrefabInstance:
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1466638822}
+      objectReference: {fileID: 424637911}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 424637911}
+      objectReference: {fileID: 1466638822}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: buttonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadGameScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: "\u30EC\u30D9\u30EB\u30E1\u30CB\u30E5\u30FC, Assembly-CSharp"
+      objectReference: {fileID: 0}
+    - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ScreenManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -654,22 +662,30 @@ PrefabInstance:
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1466638822}
+      objectReference: {fileID: 2098568562}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2098568562}
+      objectReference: {fileID: 1466638822}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: buttonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadGameScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: "\u30EC\u30D9\u30EB\u30E1\u30CB\u30E5\u30FC, Assembly-CSharp"
+      objectReference: {fileID: 0}
+    - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ScreenManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2113,22 +2129,30 @@ PrefabInstance:
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1466638822}
+      objectReference: {fileID: 1847883962}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1847883962}
+      objectReference: {fileID: 1466638822}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: buttonClicked
       objectReference: {fileID: 0}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadGameScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: "\u30EC\u30D9\u30EB\u30E1\u30CB\u30E5\u30FC, Assembly-CSharp"
+      objectReference: {fileID: 0}
+    - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ScreenManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 839143515171877315, guid: 5e188d2bf84442e408d7ca690506dbfc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName

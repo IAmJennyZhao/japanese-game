@@ -10,6 +10,9 @@ public class ゲームエンドスクリーン : MonoBehaviour
     public Text scoreText;
     public Text recipe;
 
+    // private int currentScore = 0;
+    // private int endScore = 0;
+
     public void Start(){
         gameObject.SetActive(true);
         // PlayerData.score = 30; // delete later
@@ -19,8 +22,16 @@ public class ゲームエンドスクリーン : MonoBehaviour
         scoreText.text = PlayerData.score.ToString() + " POINT";
         if (PlayerData.score != 0) 
             scoreText.text += "S";
+        Level currentLevel = PlayerData.foodInfo[PlayerData.currentLevel];
+        int addedCoins = (PlayerData.score+3) * currentLevel.coinCost;
+        scoreText.text = addedCoins + " Coins"; // todo later: add animation to coin text
         // scoreText.text = "25 POINTS";
         recipe.text = PlayerData.foodInfo[PlayerData.currentLevel].levelName;
         scoreText.SetAllDirty();
+        PlayerData.coinTotal += addedCoins;
+    }
+
+    void Update() {
+
     }
 }

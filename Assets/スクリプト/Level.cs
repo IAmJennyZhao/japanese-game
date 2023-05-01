@@ -29,7 +29,7 @@ public class Level
 // 70	180	1000
 
     private int[] coinCosts = {0, 2, 3, 6, 10, 15, 18, 20, 30, 40, 50, 60, 65, 70};
-    private int[] coinRewards = {5, 8, 10, 15, 20, 30, 40, 50, 70, 85, 100, 120, 140, 180};
+    private int[] coinRewards = {5, 10, 15, 20, 30, 40, 50, 70, 85, 100, 120, 140, 180, 250};
     private int[] unlockCosts = {0, 10, 20, 30, 40, 70, 100, 150, 280, 350, 425, 500, 750, 1000};
 
     public Level(int levelNumber_input, string levelName_input, float cookingLength_input, string levelDescription_input = "") {
