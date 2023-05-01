@@ -10,7 +10,7 @@ public class CookingBar : MonoBehaviour
     public RectTransform targetRect;
     public RectTransform handle;
 
-    public float targetValue = .4f;
+    private float targetValue = .4f;
 
     public float FillSpeed = 0.05f;
     private float sliderValue = 0; // resets slider at 0 everytime page is loaded
@@ -25,6 +25,7 @@ public class CookingBar : MonoBehaviour
     private void Awake() {
         slider = gameObject.GetComponent<Slider>();
         slider.value = sliderValue;
+        targetValue = PlayerData.foodInfo[PlayerData.currentLevel].cookingLength;
     }
     // Start is called before the first frame update
     void Start()
