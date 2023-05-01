@@ -26,6 +26,6 @@ public static class PlayerData
         {12, new Level(12, "ハンバーガステーキ",  0.63f)},
     };
 
-    public static int coinTotal {get; set; } = 16000;
+    public static int coinTotal {get; set; } = 5;
     public static bool justUnlocked {get; set; } = false; 
 }
