@@ -14,7 +14,7 @@ public class ScreenManager : MonoBehaviour
 
     public void updateMoneyText() {
         string currentScene = SceneManager.GetActiveScene().name;
-        if (currentScene == "メニュースクリーン") {
+        if (currentScene == "メニュースクリーン" || currentScene == "ゲームエンドスクリーン") {
             Debug.Log("Updating money count");
             moneyText.text = PlayerData.coinTotal+"";
             Debug.Log(PlayerData.coinTotal+" coins");
