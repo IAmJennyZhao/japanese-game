@@ -40,7 +40,9 @@ public class ScreenManager : MonoBehaviour
     }
 
     public void LoadGameOverScreen() {
-        SceneManager.LoadScene(3);
+        if (PlayerData.score >-1) {
+            SceneManager.LoadScene(3);
+        }
     }
 
     public void LoadInfoScreen() {
