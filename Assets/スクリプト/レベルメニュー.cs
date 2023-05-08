@@ -37,7 +37,7 @@ public class レベルメニュー : MonoBehaviour
             levelText.text = PlayerData.foodInfo[level].levelName;
             image.sprite = unlockedSprite;
         } else {
-            levelText.text = "-"+PlayerData.foodInfo[level].unlockCost + " 買う";
+            levelText.text = "-"+PlayerData.foodInfo[level].unlockCost + "円 アンロック"; // TODO: change font size 
             image.sprite = lockedSprite;
         }
         // updateMoneyText();
