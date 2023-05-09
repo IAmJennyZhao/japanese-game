@@ -500,6 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea75a24c86dccb4491269eb5b178f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyText: {fileID: 0}
 --- !u!1 &1656221696
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,8 +536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1924, y: 66.805}
-  m_SizeDelta: {x: 521.7121, y: 150.6851}
+  m_AnchoredPosition: {x: -3.1084, y: -62.04853}
+  m_SizeDelta: {x: 770.7971, y: 408.3922}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656221698
 MonoBehaviour:
@@ -559,7 +560,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 1aed92eefee870545a2d5e19bfa51307, type: 3}
     m_FontSize: 58
     m_FontStyle: 1
     m_BestFit: 0
@@ -740,7 +741,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ef284d01c8f49b74595294c5f4296784, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
