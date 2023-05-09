@@ -10,6 +10,7 @@ public class ScreenManager : MonoBehaviour
 
     private void Start() {
         updateMoneyText();
+        Debug.Log("Started screen manager");
     }
 
     public void updateMoneyText() {

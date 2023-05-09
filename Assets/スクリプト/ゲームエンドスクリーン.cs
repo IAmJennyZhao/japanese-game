@@ -14,6 +14,16 @@ public class ゲームエンドスクリーン : MonoBehaviour
     // private int currentScore = 0;
     // private int endScore = 0;
 
+    public void Awake() {
+        RectTransform rt = GetComponent<RectTransform>();
+        float canvasHeight = rt.rect.height;
+        float desiredCanvasWidth = canvasHeight * Camera.main.aspect;
+        float canvasWidth = rt.rect.width;
+        float desiredCanvasHeight = canvasWidth / Camera.main.aspect;
+        rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, desiredCanvasWidth);
+        // rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, desiredCanvasHeight);
+    }
+
     public void Start(){
         gameObject.SetActive(true);
         // PlayerData.score = 30; // delete later
@@ -37,6 +47,7 @@ public class ゲームエンドスクリーン : MonoBehaviour
         } if (PlayerData.score + 1 >= 3) {
             stars[2].SetActive(true);
         }
+        Debug.Log("Started end screen");
     }
 
     void Update() {
