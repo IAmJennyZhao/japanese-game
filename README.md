@@ -18,18 +18,22 @@ There are four main screens:
 
 ### Level Menu Screen 
 ![Level Menu Screen](OtherFiles/level_menu.png)
+
 This screen displays the different levels or foods that you can make. Your money is in the top right. To unlock new recipes, you must buy it using your money.
 
 ### Cooking Screen 
 ![Cooking Screen](OtherFiles/cooking_screen.png)
+
 The current cooking mechanism is currently just a simple moving bar mechanic that simulates the amount of time it takes to cook the food. Press the button with the two bars to stop cooking. If you stop in the smallest section, you can get more points. 
 
 ### End Level Screen 
 ![End Level Screen](OtherFiles/end_level.png)
+
 This screen features an explosion of coin particle effects and also reveals how much money you have made. 
 
 ### Info Screen 
 ![Info Screen](OtherFiles/味噌汁インフォ.jpg)
+
 If you are interested in the food and how to make it, you can access the info screen for each food. 
 
 ## Setup
