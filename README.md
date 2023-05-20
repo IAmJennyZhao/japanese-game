@@ -29,7 +29,7 @@ The current cooking mechanism is currently just a simple moving bar mechanic tha
 This screen features an explosion of coin particle effects and also reveals how much money you have made. 
 
 ### Info Screen 
-![Info Screen](OtherFiles/味噌汁インフォ.png)
+![Info Screen](OtherFiles/味噌汁インフォ.jpg)
 If you are interested in the food and how to make it, you can access the info screen for each food. 
 
 ## Setup
