@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class ScreenManager : MonoBehaviour
 {
     public Text moneyText;
+    public Animator transition;
+    private float transitionTime = 1.0f;
 
     private void Start() {
         updateMoneyText();
@@ -23,11 +25,13 @@ public class ScreenManager : MonoBehaviour
     }
 
     public void LoadTitleScreen() {
-        SceneManager.LoadScene(0);
+        // SceneManager.LoadScene(0);
+        StartCoroutine(LoadLevel(0));
     }
 
     public void LoadRulesScreen() {
-        SceneManager.LoadScene(1);
+        // SceneManager.LoadScene(1);
+        StartCoroutine(LoadLevel(1));
     }
 
     public void LoadGameScreen() {
@@ -51,7 +55,13 @@ public class ScreenManager : MonoBehaviour
     }
 
     public void LoadMenuScreen() {
-        SceneManager.LoadScene(5);
+        // SceneManager.LoadScene(5);
+        StartCoroutine(LoadLevel(5));
     }
 
+    IEnumerator LoadLevel(int buildIndex) {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene(buildIndex);
+    }
 }
